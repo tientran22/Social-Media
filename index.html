@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Social Media</title>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar">
+        <div class="container navbar__container">
+            <a href="#" class="navbar__logo">
+                <img src="./assets/images/social logo.png" alt="#" class="navbar__logo-img">
+            </a>
+            <div class="navbar__search input-search">
+                <i class="fas fa-search"></i>
+                <input type="text" class="navbar__search-input" placeholder="Search for creator's, inspations, and project">
+            </div>
+            <div class="navbar__create">
+                <label for="create-post" class="btn btn-primary">Create</label>
+                <img src="./assets/images/profile-1.jpg" alt="" class="navbar__profile profile-photo">
+            </div>
+        </div>
+    </nav>
+    <!-- End nav -->
+
+    <!-- Main -->
+    <main>
+        <div class="container container__main">
+            <!-- left -->
+            <div class="left">
+                <div class="profile">
+                    <img src="./assets/images/profile-1.jpg" alt="" class="profile-photo">
+                    <div class="profile__info">
+                        <span class="profile__name text-bold">Diana Ayi</span>
+                        <span class="profile__sub text-muted">@dayi</span>
+                    </div>
+                </div>
+
+                <div class="sidebar">
+                    <a href="#" class="sidebar__item active">
+                        <i class="fas fa-home"></i>
+                        <span class="sidebar__name text-bold">Home</span>
+                    </a>
+                    <a href="#" class="sidebar__item">
+                        <i class="fa-regular fa-compass"></i>
+                        <span class="sidebar__name text-bold">Explore</span>
+                    </a>
+                    <a href="#" class="sidebar__item" id="notifications">
+                        <i class="fa-regular fa-bell notifi-icon">
+                            <span class="notifi-num">9+</span>
+                        </i>
+                        <span class="sidebar__name text-bold">Notifications</span>
+                        <!-- Notifications Popup -->
+                        <div class="notifications-popup">
+                            <div class="notifications-popup__container">
+                                <div>
+                                    <img src="./assets/images/profile-2.jpg" alt="" class="profile-photo">
+                                </div>
+                                <div class="notifications-popup__body">
+                               <p class="notifications-popup__content">
+                               <span class="text-bold">Keke Benjamin</span> accepted your friend request...
+                               </p> 
+                               <span class="notifications-popup__time text-muted">2 Days ago</span>
+                                </div>
+                            </div>
+
+                            <div class="notifications-popup__container">
+                                <div>
+                                    <img src="./assets/images/profile-3.jpg" alt="" class="profile-photo">
+                                </div>
+                                <div class="notifications-popup__body">
+                               <p class="notifications-popup__content">
+                               <span class="text-bold">Keke Benjamin</span> accepted your friend request...
+                               </p> 
+                               <span class="notifications-popup__time text-muted">2 Days ago</span>
+                                </div>
+                            </div>
+
+                            <div class="notifications-popup__container">
+                                <div>
+                                    <img src="./assets/images/profile-4.jpg" alt="" class="profile-photo">
+                                </div>
+                                <div class="notifications-popup__body">
+                               <p class="notifications-popup__content">
+                               <span class="text-bold">Keke Benjamin</span> accepted your friend request...
+                               </p> 
+                               <span class="notifications-popup__time text-muted">2 Days ago</span>
+                                </div>
+                            </div>
+
+                            <div class="notifications-popup__container">
+                                <div>
+                                    <img src="./assets/images/profile-5.jpg" alt="" class="profile-photo">
+                                </div>
+                                <div class="notifications-popup__body">
+                               <p class="notifications-popup__content">
+                               <span class="text-bold">Keke Benjamin</span> accepted your friend request...
+                               </p> 
+                               <span class="notifications-popup__time text-muted">2 Days ago</span>
+                                </div>
+                            </div>
+
+                            <div class="notifications-popup__container">
+                                <div>
+                                    <img src="./assets/images/profile-6.jpg" alt="" class="profile-photo">
+                                </div>
+                                <div class="notifications-popup__body">
+                               <p class="notifications-popup__content">
+                               <span class="text-bold">Keke Benjamin</span> accepted your friend request...
+                               </p> 
+                               <span class="notifications-popup__time text-muted">2 Days ago</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Notifications Popup -->
+                    </a>
+                    <a href="#" class="sidebar__item" id="message-item">
+                        <i class="fa-regular fa-envelope message-icon">
+                            <span class="message-num">6</span>
+                        </i>
+                        <span class="sidebar__name text-bold">Message</span>
+                    </a>
+                    <a href="#" class="sidebar__item">
+                        <i class="fa-regular fa-bookmark"></i>
+                        <span class="sidebar__name text-bold">Bookmarks</span>
+                    </a>
+                    <a href="#" class="sidebar__item">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <span class="sidebar__name text-bold">Analytics</span>
+                    </a>
+                    <a href="#" class="sidebar__item" id="theme-item">
+                        <i class="fa-brands fa-affiliatetheme"></i>
+                        <span class="sidebar__name text-bold">Theme</span>
+                    </a>
+                    <a href="#" class="sidebar__item">
+                        <i class="fa-solid fa-gear"></i>
+                        <span class="sidebar__name text-bold">Settings</span>
+                    </a>
+                </div>
+                <label for="create-post" class="btn btn-primary btn-sidebar">Create Post</label>
+            </div>
+            <!-- middle -->
+            <div class="middle">
+                <div class="stories">
+                    <div class="story">
+                        <div><img src="./assets/images/profile-8.jpg" alt="" class="profile-photo profile-story"></div>
+                        <p class="story-name">Your story</p>
+                    </div>
+                    <div class="story">
+                        <div><img src="./assets/images/profile-9.jpg" alt="" class="profile-photo profile-story"></div>
+                        <p class="story-name">Lily</p>
+                    </div>
+                    <div class="story">
+                        <div><img src="./assets/images/profile-10.jpg" alt="" class="profile-photo profile-story"></div>
+                        <p class="story-name">Windy</p>
+                    </div>
+                    <div class="story">
+                        <div><img src="./assets/images/profile-11.jpg" alt="" class="profile-photo profile-story"></div>
+                        <p class="story-name">Daniel Been</p>
+                    </div>
+                    <div class="story">
+                        <div><img src="./assets/images/profile-12.jpg" alt="" class="profile-photo profile-story"></div>
+                        <p class="story-name">Jane Ween</p>
+                    </div>
+                    <div class="story">
+                        <div><img src="./assets/images/profile-13.jpg" alt="" class="profile-photo profile-story"></div>
+                        <p class="story-name">Ricasdo Kaka</p>
+                    </div>
+                </div>
+                <!-- End stories -->
+                <form action="" class="create-post">
+                    <div><img src="./assets/images/profile-1.jpg" alt="" class="profile-photo create-post-profile"></div>
+                    <input type="text" class="create-post-input" id="create-post" placeholder="What's on your mind, Diana?">
+                    <input type="submit" value="Post" class="btn btn-primary">
+                </form>
+                <!-- Feeds -->
+                <div class="feeds">
+                    <div class="feed">
+                        <div class="feed-head">
+                            <div class="user">
+                                <div><img src="./assets/images/profile-13.jpg" alt="" class="profile-photo"></div>
+                                <div class="user-info">
+                                    <p class="user-name text-bold">LaLa Rose</p> 
+                                    <p class="user-place-time">Dubai, 15 minutes ago</p>
+                                </div>
+                            </div>
+                            <div class="feed-setting">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+                        <div class="feed-photo">
+                            <img src="/assets/images/feed-1.jpg" alt="" class="feed-photo-img">
+                        </div>
+                        <div class="action-button">
+                            <div class="interactions-button">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-comment"></i>
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </div>
+                            <div class="book-mark">
+                                <i class="fa-solid fa-book-bookmark"></i>
+                            </div>
+                        </div>
+                            <div class="like-by">
+                                <span><img src="./assets/images/profile-14.jpg" alt="" class="profile-photo profile-feed"></span>
+                                <span><img src="./assets/images/profile-15.jpg" alt="" class="profile-photo profile-feed"></span>
+                                <span><img src="./assets/images/profile-16.jpg" alt="" class="profile-photo profile-feed"></span>
+                                <p class="like-by-info">Like by <b>Ermerrest Archive</b> and <b>2023 other peoples</b></p>
+                            </div>
+                            <div class="feed-caption">
+                                <p><b>Lala Rose</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, eligendi?. #life</p>
+                            </div>
+                            <div class="view-comment text-muted">View 277 comment</div>
+                    </div>
+                    <div class="feed">
+                        <div class="feed-head">
+                            <div class="user">
+                                <div><img src="./assets/images/profile-14.jpg" alt="" class="profile-photo"></div>
+                                <div class="user-info">
+                                    <p class="user-name text-bold">LaLa Rose</p> 
+                                    <p class="user-place-time">Dubai, 15 minutes ago</p>
+                                </div>
+                            </div>
+                            <div class="feed-setting">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+                        <div class="feed-photo">
+                            <img src="/assets/images/feed-2.jpg" alt="" class="feed-photo-img">
+                        </div>
+                        <div class="action-button">
+                            <div class="interactions-button">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-comment"></i>
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </div>
+                            <div class="book-mark">
+                                <i class="fa-solid fa-book-bookmark"></i>
+                            </div>
+                        </div>
+                            <div class="like-by">
+                                <span><img src="./assets/images/profile-14.jpg" alt="" class="profile-photo profile-feed"></span>
+                                <span><img src="./assets/images/profile-15.jpg" alt="" class="profile-photo profile-feed"></span>
+                                <span><img src="./assets/images/profile-16.jpg" alt="" class="profile-photo profile-feed"></span>
+                                <p class="like-by-info">Like by <b>Ermerrest Archive</b> and <b>2023 other peoples</b></p>
+                            </div>
+                            <div class="feed-caption">
+                                <p><b>Lala Rose</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, eligendi?. #life</p>
+                            </div>
+                            <div class="view-comment text-muted">View 277 comment</div>
+                    </div>
+                    <div class="feed">
+                        <div class="feed-head">
+                            <div class="user">
+                                <div><img src="./assets/images/profile-15.jpg" alt="" class="profile-photo"></div>
+                                <div class="user-info">
+                                    <p class="user-name text-bold">LaLa Rose</p> 
+                                    <p class="user-place-time">Dubai, 15 minutes ago</p>
+                                </div>
+                            </div>
+                            <div class="feed-setting">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+                        <div class="feed-photo">
+                            <img src="/assets/images/feed-3.jpg" alt="" class="feed-photo-img">
+                        </div>
+                        <div class="action-button">
+                            <div class="interactions-button">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-comment"></i>
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </div>
+                            <div class="book-mark">
+                                <i class="fa-solid fa-book-bookmark"></i>
+                            </div>
+                        </div>
+                            <div class="like-by">
+                                <span><img src="./assets/images/profile-14.jpg" alt="" class="profile-photo profile-feed"></span>
+                                <span><img src="./assets/images/profile-15.jpg" alt="" class="profile-photo profile-feed"></span>
+                                <span><img src="./assets/images/profile-16.jpg" alt="" class="profile-photo profile-feed"></span>
+                                <p class="like-by-info">Like by <b>Ermerrest Archive</b> and <b>2023 other peoples</b></p>
+                            </div>
+                            <div class="feed-caption">
+                                <p><b>Lala Rose</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, eligendi?. #life</p>
+                            </div>
+                            <div class="view-comment text-muted">View 277 comment</div>
+                    </div>
+                    <div class="feed">
+                        <div class="feed-head">
+                            <div class="user">
+                                <div><img src="./assets/images/profile-16.jpg" alt="" class="profile-photo"></div>
+                                <div class="user-info">
+                                    <p class="user-name text-bold">LaLa Rose</p> 
+                                    <p class="user-place-time">Dubai, 15 minutes ago</p>
+                                </div>
+                            </div>
+                            <div class="feed-setting">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+                        <div class="feed-photo">
+                            <img src="/assets/images/feed-4.jpg" alt="" class="feed-photo-img">
+                        </div>
+                        <div class="action-button">
+                            <div class="interactions-button">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-comment"></i>
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </div>
+                            <div class="book-mark">
+                                <i class="fa-solid fa-book-bookmark"></i>
+                            </div>
+                        </div>
+                            <div class="like-by">
+                                <span><img src="./assets/images/profile-14.jpg" alt="" class="profile-photo profile-feed"></span>
+                                <span><img src="./assets/images/profile-15.jpg" alt="" class="profile-photo profile-feed"></span>
+                                <span><img src="./assets/images/profile-16.jpg" alt="" class="profile-photo profile-feed"></span>
+                                <p class="like-by-info">Like by <b>Ermerrest Archive</b> and <b>2023 other peoples</b></p>
+                            </div>
+                            <div class="feed-caption">
+                                <p><b>Lala Rose</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, eligendi?. #life</p>
+                            </div>
+                            <div class="view-comment text-muted">View 277 comment</div>
+                    </div>
+                    <div class="feed">
+                        <div class="feed-head">
+                            <div class="user">
+                                <div><img src="./assets/images/profile-17.jpg" alt="" class="profile-photo"></div>
+                                <div class="user-info">
+                                    <p class="user-name text-bold">LaLa Rose</p> 
+                                    <p class="user-place-time">Dubai, 15 minutes ago</p>
+                                </div>
+                            </div>
+                            <div class="feed-setting">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+                        <div class="feed-photo">
+                            <img src="/assets/images/feed-5.jpg" alt="" class="feed-photo-img">
+                        </div>
+                        <div class="action-button">
+                            <div class="interactions-button">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-comment"></i>
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </div>
+                            <div class="book-mark">
+                                <i class="fa-solid fa-book-bookmark"></i>
+                            </div>
+                        </div>
+                            <div class="like-by">
+                                <span><img src="./assets/images/profile-14.jpg" alt="" class="profile-photo profile-feed"></span>
+                                <span><img src="./assets/images/profile-15.jpg" alt="" class="profile-photo profile-feed"></span>
+                                <span><img src="./assets/images/profile-16.jpg" alt="" class="profile-photo profile-feed"></span>
+                                <p class="like-by-info">Like by <b>Ermerrest Archive</b> and <b>2023 other peoples</b></p>
+                            </div>
+                            <div class="feed-caption">
+                                <p><b>Lala Rose</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, eligendi?. #life</p>
+                            </div>
+                            <div class="view-comment text-muted">View 277 comment</div>
+                    </div>
+                </div>
+                <!-- End Feeds -->
+            </div>
+            <!-- End middle -->
+            
+            <!-- right -->
+            <div class="right">
+                <div class="messages">
+                    <div class="head">
+                        <h3 class="heading text-bold">Messages</h3>
+                        <i class="fas fa-edit"></i>
+                    </div>
+                    <!-- Search bar -->
+                    <div class="search-bar">
+                        <i class="fas fa-search"></i>
+                        <input type="search" name="" class="search-input" id="search-bar" placeholder="Search messages">
+                    </div>
+
+                    <div class="message-category">
+                        <h4 class="category-name text-bold active">Primary</h4>
+                        <h4 class="category-name text-bold">General</h4>
+                        <h4 class="category-name category-request text-bold">Request(7)</h4>
+                    </div>
+                    <!-- Message -->
+                    <div class="message">
+                        <div class="message-photo-box"><img src="./assets/images/profile-20.jpg" alt="" class="profile-photo">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h4 class="message-name text-bold">Edam Smith</h4>
+                            <p class="message-content text-muted">Just up woke bruh</p>
+                        </div>
+                    </div>
+
+                    <div class="message">
+                        <div><img src="./assets/images/profile-15.jpg" alt="" class="profile-photo"></div>
+                        <div class="message-body">
+                            <h4 class="message-name text-bold">Mememy</h4>
+                            <p class="message-content text-bold">Hello my friend</p>
+                        </div>
+                    </div>
+
+                    <div class="message">
+                        <div><img src="./assets/images/profile-10.jpg" alt="" class="profile-photo"></div>
+                        <div class="message-body">
+                            <h4 class="message-name text-bold">Smith Rose</h4>
+                            <p class="message-content text-bold">How do you feed?</p>
+                        </div>
+                    </div>
+
+                    <div class="message">
+                        <div><img src="./assets/images/profile-11.jpg" alt="" class="profile-photo"></div>
+                        <div class="message-body">
+                            <h4 class="message-name text-bold">Jack Grealish</h4>
+                            <p class="message-content text-bold">Hi Bro!</p>
+                        </div>
+                    </div>
+
+                    <div class="message">
+                        <div><img src="./assets/images/profile-12.jpg" alt="" class="profile-photo"></div>
+                        <div class="message-body">
+                            <h4 class="message-name text-bold">Fancy</h4>
+                            <p class="message-content text-muted">Just you</p>
+                        </div>
+                    </div>
+
+                    <div class="message">
+                        <div><img src="./assets/images/profile-13.jpg" alt="" class="profile-photo"></div>
+                        <div class="message-body">
+                            <h4 class="message-name text-bold">Lalana</h4>
+                            <p class="message-content text-muted">For fun</p>
+                        </div>
+                    </div>
+                   
+                    <!-- End Messages -->
+                    <!-- Requests -->
+                </div>
+                <div class="friend-requests">
+                    <h4 class="request-title text-bold">Request</h4>
+                    <div class="request">
+                        <div class="request-info">
+                            <div><img src="./assets/images/profile-17.jpg" alt="" class="profile-photo"></div>
+                            <div class="request-body">
+                                <h4 class="request-name text-bold">Hello Hi</h4>
+                                <span class="friend-mutual text-muted">8 mutual friends</span>
+                            </div>
+                        </div>
+                        <div class="request-action">
+                            <button class="btn btn-primary">Accept</button>
+                            <button class="btn">Decline</button> 
+                        </div>
+                    </div>
+
+                    <div class="request">
+                        <div class="request-info">
+                            <div><img src="./assets/images/profile-17.jpg" alt="" class="profile-photo"></div>
+                            <div class="request-body">
+                                <h4 class="request-name text-bold">Hello Hi</h4>
+                                <span class="friend-mutual text-muted">8 mutual friends</span>
+                            </div>
+                        </div>
+                        <div class="request-action">
+                            <button class="btn btn-primary">Accept</button>
+                            <button class="btn">Decline</button> 
+                        </div>
+                    </div>
+
+                    <div class="request">
+                        <div class="request-info">
+                            <div><img src="./assets/images/profile-17.jpg" alt="" class="profile-photo"></div>
+                            <div class="request-body">
+                                <h4 class="request-name text-bold">Hello Hi</h4>
+                                <span class="friend-mutual text-muted">8 mutual friends</span>
+                            </div>
+                        </div>
+                        <div class="request-action">
+                            <button class="btn btn-primary">Accept</button>
+                            <button class="btn">Decline</button> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End right -->
+        </div>
+    </main>
+    <div class="custom-theme">
+        <div class="card-theme">
+            <h2 class="theme-title text-bold">Customize you view</h2>
+            <p class="theme-sub-title text-muted">Manage your font size, color, and background</p>
+            <h4 class="theme-heading">Font size</h4>
+            <div class="theme-font-size">
+                <h6>Aa</h6>
+                <div class="choose-size">
+                    <span class="font-size1"></span>
+                    <span class="font-size2 active"></span>
+                    <span class="font-size3"></span>
+                </div>
+                <h3>Aa</h3>
+            </div>
+            <h4 class="theme-heading">Color</h4>
+            <div class="choose-color">
+                <span class="color-1"></span>
+                <span class="color-2 active"></span>
+                <span class="color-3"></span>
+            </div>
+            <h4 class="theme-heading">Background</h4>
+            <div class="choose-background">
+                <div class="bg-1 active">
+                    <span></span>
+                    <h4 class="text-bold">Light</h4>
+                </div>
+                <div class="bg-2">
+                    <span></span>
+                    <h4 class="text-bold">Dark</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
